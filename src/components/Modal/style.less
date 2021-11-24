@@ -1,0 +1,62 @@
+@import "src/theme";
+
+.od-modal-block {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.od-modal-close {
+    z-index: 101;
+    height: 100%;
+    width: 100%;
+    max-height: 100vh;
+    max-width: 100vw;
+    background: rgba(0, 0, 0, 0.3);;
+}
+
+.od-modal {
+    z-index: 102;
+    position: absolute;
+    margin: 150px 0;
+    display: flex;
+    justify-content: center;
+    background: white;
+    padding: 32px;
+    border-radius: 30px;
+    min-width: 320px;
+    max-height: 100%;
+    overflow: auto;
+}
+
+@media screen and (max-width: 400px) {
+    .od-modal {
+        min-width: 100%;
+        min-height: 100%;
+        border-radius: 0;
+        padding: 16px;
+        margin: 0;
+    }
+}
+
+.od-modal .close-btn {
+    background: url("./Close.svg") no-repeat center;
+    height: 27px;
+    width: 27px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.od-modal-content {
+    width: 100%;
+    height: 100%;
+}

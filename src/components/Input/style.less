@@ -1,0 +1,50 @@
+@import "src/theme";
+
+.od-input {
+    display: block;
+    border-radius: @border-radius-base / 2;
+    border: @border-base;
+    padding: 8px 10px;
+    font-size: 14px;
+    line-height: 24px;
+    transition: 0.3s;
+    outline: none;
+    font-weight: 500;
+    color: black;
+    &:hover {
+        border: @border-active;
+    }
+    &.od-input-error {
+        border: @border-error;
+    }
+    &::placeholder {
+        opacity: .5;
+    }
+    &:disabled {
+        border-color: #808080 !important;
+        cursor: not-allowed;
+    }
+}
+
+.od-input-group p {
+    margin: 0;
+}
+
+.od-input-group p.title {
+    font-size: 14px;
+    line-height: 24px;
+    color: black;
+    margin-bottom: 8px;
+}
+
+.od-input-group p.error-text {
+    font-size: 12px;
+    line-height: 10px;
+    color: @red;
+    margin-top: 4px;
+}
+
+
+.od-input-block {
+    width: 100%;
+}

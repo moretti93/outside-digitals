@@ -1,0 +1,110 @@
+@import url('http://fonts.cdnfonts.com/css/lab-grotesque');
+@import "theme";
+html, body, #root {
+    font-family: 'Lab Grotesque', sans-serif;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#root {
+    background: @red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: @red;
+}
+.tax-calculator {
+    max-width: 552px;
+    width: 100%;
+}
+.tax-calculator .od-modal-content {
+    overflow: visible;
+}
+
+.tax-calculator .header {
+    font-weight: 600;
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.tax-calculator .description {
+    white-space: pre-line;
+    color: #808080;
+    margin-bottom: 24px;
+}
+
+.tax-calculator .title {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.tax-calculator .od-input {
+    margin-bottom: 8px;
+}
+
+.tax-calculator .payment {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: @border-base;
+}
+
+.tax-calculator .payment .od-checkbox {
+    margin-right: 11px;
+}
+
+.tax-calculator .payment p:last-of-type {
+    opacity: .8;
+    margin-left: 3px;
+}
+
+.tax-calculator .payment p {
+    margin: 0;
+}
+
+.tax-calculator .bottom {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.tax-calculator .payments {
+    max-height: 30vh;
+    overflow: auto;
+}
+
+.tax-calculator .tags {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tax-calculator .tags .od-tag {
+    margin-left: 16px;
+}
+
+.tax-calculator .tags .title {
+    padding-right: 16px;
+}

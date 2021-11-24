@@ -1,0 +1,29 @@
+@import "src/theme";
+
+.od-tag {
+    border-radius: 50px;
+    height: 36px;
+    padding: 6px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+    min-width: 70px;
+    &.od-tag-selected {
+        background: @red;
+        color: white;
+    }
+    &:not(.od-tag-selected) {
+        background: #EEF0F2;
+        color: black;
+    }
+    &:not(.od-tag-selected):hover {
+        background: #DFE3E6;
+    }
+    &.od-tag-disabled {
+        background-color: @disabled-color !important;
+        cursor: not-allowed;
+        color: black;
+    }
+}
